@@ -1,0 +1,35 @@
+{
+  "name": "page2pdf",
+  "version": "0.1.0",
+  "description": "convert a page url to pdf",
+  "main": "src/index.js",
+  "bin": {
+    "page2pdf": "bin/page2pdf.js"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://git@github.com/zenxds/page2pdf.git"
+  },
+  "keywords": [
+    "pdf"
+  ],
+  "author": "zenxds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zenxds/page2pdf/issues"
+  },
+  "homepage": "https://github.com/zenxds/page2pdf#readme",
+  "dependencies": {
+    "chrome-launcher": "^0.3.1",
+    "chrome-remote-interface": "^0.24.1",
+    "commander": "^2.11.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "fs-extra": "^3.0.1"
+  }
+}
