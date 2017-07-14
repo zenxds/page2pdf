@@ -5,9 +5,6 @@ convert a page url to pdf, depend on chrome's printToPDF
 ## install
 
 ```
-# mac
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-
 npm install -g page2pdf
 ```
 
