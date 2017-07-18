@@ -4,6 +4,8 @@ convert a page url to pdf, depend on chrome's printToPDF
 
 ## install
 
+install chrome first
+
 ```
 npm install -g page2pdf
 ```
@@ -38,8 +40,15 @@ page2pdf https://www.baidu.com -o baidu.pdf --delay 3000
 
 install chrome
 
-[install node && npm](https://nodejs.org/en/download/package-manager/) or docker(FROM node:8)
 
 ```
+[install node && npm](https://nodejs.org/en/download/package-manager/) or docker(FROM node:8)
+
 npm install -g page2pdf --registry=https://registry.npm.taobao.org
 ```
+
+or you can package page2pdf to a command line tool(npm run pkg), set [pkg](https://github.com/zeit/pkg)
+
+## known issue
+
+* canvas foggy : you can use canvas.toDataURL("image/png", 1), transform canvas to a image
