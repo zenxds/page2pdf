@@ -10,8 +10,9 @@ program
   .usage('<url> [options]')
   .option('-o, --output [path]', 'output file, default page2pdf.pdf')  
   .option('--delay [ms]', 'delay ms for js execute, default 2000', parseInt)
+  .option('--chrome-path [path]', 'path for chrome browser')  
   .option('--disable-gpu', 'disable-gpu flag for headless-chrome')
-  .option('--chrome-path [path]', 'path for chrome browser')
+  .option('--no-sandbox', 'no sandbox for chrome')
   // .option('--window-size [size]', 'window size for chrome launcher, such as 412,732')
   // .option('--paper-width [width]', 'Paper width in inches. Defaults to 8.5 inches', parseFloat)
   // .option('--paper-height [height]', 'Paper height in inches. Defaults to 11 inches', parseFloat)
@@ -27,7 +28,8 @@ const options = {
   output: program.output,
   delay: program.delay,
   disableGpu: program.disableGpu,
-  chromePath: program.chromePath
+  chromePath: program.chromePath,
+  noSandbox: program.noSandbox
   // windowSize: program.windowSize,
   // paperWidth: program.paperWidth,
   // paperHeight: program.paperHeight

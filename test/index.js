@@ -12,7 +12,9 @@ test.after(() => {
 test(async t => {
   await page2pdf({
     url: 'https://www.baidu.com',
-    output: pdfPath
+    output: pdfPath,
+    disableGpu: true,
+    noSanbox: true
   })
 
   t.true(fs.pathExistsSync(pdfPath))
