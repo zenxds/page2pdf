@@ -32,23 +32,29 @@ page2pdf https://www.baidu.com -o baidu.pdf --delay 3000
 ```
 -o              output file, default page2pdf.pdf
 --delay         delay ms for js execute, default 2000
---disable-gpu   disable-gpu flag for headless-chrome
---chrome-path   path for chrome browser
+
+--disable-gpu   disable-gpu option for chrome
+--no-sandbox    no-sandbox option for chrome
+--chrome-path   path for chrome browser, most time you don't need to use this option
 ```
 
-## deploy
+## docker deploy
 
+```
 install chrome
 
+npm run pkg
 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+mv google-chrome-stable_current_amd64.deb pkg
+
+docker build .
 ```
-[install node && npm](https://nodejs.org/en/download/package-manager/) or docker(FROM node:8)
 
-npm install -g page2pdf --registry=https://registry.npm.taobao.org
-```
-
-or you can package page2pdf to a command line tool(npm run pkg), set [pkg](https://github.com/zeit/pkg)
+see [pkg](https://github.com/zeit/pkg)
 
 ## known issue
 
+* can't launch chrome in docker environment : use --no-sandbox flag，if problem still exists, add --cap-add=SYS_ADMIN or --privileged to docker run
 * canvas foggy : you can use canvas.toDataURL("image/png", 1), transform canvas to a image
