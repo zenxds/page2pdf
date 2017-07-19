@@ -29,7 +29,8 @@ const options = {
   delay: program.delay,
   disableGpu: program.disableGpu,
   chromePath: program.chromePath,
-  noSandbox: program.noSandbox
+  // --no-sandbox 解析为sandbox: false
+  sandbox: program.sandbox
   // windowSize: program.windowSize,
   // paperWidth: program.paperWidth,
   // paperHeight: program.paperHeight
