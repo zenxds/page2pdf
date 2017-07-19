@@ -14,7 +14,7 @@ test(async t => {
     url: 'https://www.baidu.com',
     output: pdfPath,
     disableGpu: true,
-    noSandbox: true
+    sandbox: false
   })
 
   t.true(fs.pathExistsSync(pdfPath))
