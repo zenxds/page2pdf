@@ -2,7 +2,7 @@
   "name": "page2pdf",
   "version": "0.2.2",
   "description": "convert a page url to pdf",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "bin": {
     "page2pdf": "bin/page2pdf.js"
   },
