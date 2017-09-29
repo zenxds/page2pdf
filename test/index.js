@@ -13,7 +13,6 @@ test(async t => {
   await page2pdf({
     url: 'https://www.baidu.com',
     output: pdfPath,
-    disableGpu: true,
     sandbox: false
   })
 
