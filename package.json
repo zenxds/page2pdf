@@ -33,6 +33,11 @@
     "pkg": "^4.2.4"
   },
   "pkg": {
-    "scripts": "**/puppeteer"
+    "scripts": [
+      "**/puppeteer/lib"
+    ],
+    "assets": [
+      "**/puppeteer/.local-chromium"      
+    ]
   }
 }
