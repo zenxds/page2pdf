@@ -33,9 +33,7 @@ page2pdf https://www.baidu.com -o baidu.pdf --delay 3000
 -o              output file, default page2pdf.pdf
 --delay         delay ms for js execute, default 2000
 
---disable-gpu   disable-gpu option for chrome
 --no-sandbox    no-sandbox option for chrome
---chrome-path   path for chrome browser, most time you don't need to use this option
 ```
 
 ## docker deploy
