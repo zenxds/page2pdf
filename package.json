@@ -31,5 +31,8 @@
     "ava": "^0.21.0",
     "fs-extra": "^3.0.1",
     "pkg": "^4.2.4"
+  },
+  "pkg": {
+    "scripts": "**/puppeteer"
   }
 }
