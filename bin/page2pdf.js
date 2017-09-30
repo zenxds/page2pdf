@@ -10,7 +10,6 @@ program
   .usage('<url> [options]')
   .option('-o, --output [path]', 'output file, default page2pdf.pdf')  
   .option('--delay [ms]', 'delay ms for js execute, default 2000', parseInt)
-  .option('--no-sandbox', 'no sandbox for chrome')
   .parse(process.argv)
 
 const args = program.args
@@ -21,8 +20,7 @@ if (args.length == 0) {
 const options = {
   url: args[0],
   output: program.output,
-  delay: program.delay,
-  sandbox: program.sandbox
+  delay: program.delay
 }
 
 page2pdf(options).then(() => {

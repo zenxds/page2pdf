@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "ava",
-    "pkg": "pkg -t node8-linux,node8-macos --out-path pkg ."
+    "pkg": "pkg -t node8-linux --out-path pkg ."
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/zenxds/page2pdf#readme",
   "dependencies": {
+    "chrome-launcher": "^0.8.0",
     "commander": "^2.11.0",
+    "lodash.defaults": "^4.2.0",
     "puppeteer": "^0.11.0"
   },
   "devDependencies": {
@@ -33,11 +35,9 @@
     "pkg": "^4.2.4"
   },
   "pkg": {
-    "scripts": [
-      "**/puppeteer/lib"
-    ],
+    "scripts": [],
     "assets": [
-      "**/puppeteer/.local-chromium"      
+      "node_modules/puppeteer/.local-chromium/linux-499413"
     ]
   }
 }

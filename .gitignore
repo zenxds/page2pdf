@@ -68,4 +68,6 @@ package-lock.json
 .vscode
 tmp
 .yo-rc.json
+
 pkg
+chrome-linux
