@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "jest",
-    "pkg": "pkg -t node8-linux --out-path pkg ."
+    "pkg": "pkg -t node8-linux --out-path pkg .",
+    "build:docker": "docker build . -t page2pdf:latest"
   },
   "repository": {
     "type": "git",

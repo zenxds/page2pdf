@@ -1,10 +1,10 @@
 FROM ubuntu:latest
 
-ENV APP_DIR /var/tools/page2pdf
+ENV APP_DIR /root/page2pdf
 
 RUN mkdir -p $APP_DIR
 
-COPY pkg/page2pdf $APP_DIR
+COPY pkg/page2pdf /usr/local/bin
 COPY pkg/google-chrome-stable_current_amd64.deb $APP_DIR
 
 WORKDIR $APP_DIR

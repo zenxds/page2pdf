@@ -10,15 +10,6 @@ install chrome first
 npm install -g page2pdf
 ```
 
-```
-// Linux
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo apt-get -f install
-sudo apt-get install fonts-wqy-microhei // install a chinese font
-```
-
-
 ## useage
 
 ```
@@ -37,15 +28,13 @@ page2pdf https://www.baidu.com -o baidu.pdf --delay 3000
 ## docker deploy
 
 ```
-install chrome
-
-npm run pkg
+yarn pkg
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 mv google-chrome-stable_current_amd64.deb pkg
 
-docker build .
+yarn build:docker
 ```
 
 see [pkg](https://github.com/zeit/pkg)
