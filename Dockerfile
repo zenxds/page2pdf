@@ -4,7 +4,7 @@ ENV APP_DIR /var/tools/page2pdf
 
 RUN mkdir -p $APP_DIR
 
-COPY pkg/page2pdf-linux $APP_DIR
+COPY pkg/page2pdf $APP_DIR
 COPY pkg/google-chrome-stable_current_amd64.deb $APP_DIR
 
 WORKDIR $APP_DIR
