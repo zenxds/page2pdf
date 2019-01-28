@@ -39,6 +39,12 @@ yarn build:docker
 
 see [pkg](https://github.com/zeit/pkg)
 
+## shell param
+
+```
+https://www.baidu.com\?id\=1
+```
+
 ## known issue
 
 * can't launch chrome in docker environment : use --no-sandbox flag，if problem still exists, add --cap-add=SYS_ADMIN or --privileged to docker run
