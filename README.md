@@ -45,6 +45,14 @@ see [pkg](https://github.com/zeit/pkg)
 https://www.baidu.com\?id\=1
 ```
 
+## concat pdf
+
+```
+sudo apt install poppler-utils
+
+pdfunite in-1.pdf in-2.pdf in-n.pdf out.pdf
+```
+
 ## known issue
 
 * can't launch chrome in docker environment : use --no-sandbox flag，if problem still exists, add --cap-add=SYS_ADMIN or --privileged to docker run
